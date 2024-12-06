@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Page</title>
+</head>
+<body>
+    <form action="register.php" method="post">
+        <label for="matric">Matric:</label>
+        <input type="text" id="matric" name="matric" required><br>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+
+        <label for="role">Role:</label>
+        <select id="role" name="role" required>
+            <option value="" disabled selected>Please select</option>
+            <option value="Admin">Admin</option>
+            <option value="User">User</option>
+            <option value="Guest">Guest</option>
+        </select><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
